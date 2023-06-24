@@ -1,0 +1,239 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(246, 245, 245);
+}
+nav{
+    background-color: white;
+    box-shadow: 0px 10px 30px #7B7B7B29;
+}
+nav p{
+    font-weight: bold;
+    font-family: Inter;
+    padding: 15px 100px;
+    background-color: #FFFFFF;
+    font-size: 40px;
+    color: #424242;
+}
+nav p span{
+    color: #00A5EC;
+}
+.addBtn{
+    display: flex;
+    justify-content: flex-end;
+    font-size:22px;
+    color: #424242;
+    margin-right: 140px;
+    margin-top: 20px;
+}
+.addBtn span a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #424242;
+}
+.addIcon{
+    font-size: 18px;
+    background-color: #00A5EC;
+    margin-right: 20px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+}
+.tasks{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.newTasks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+.card
+{
+    width: 500px;
+    height: 360px;
+    margin: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #EDEDED;
+}
+.tasks a{
+    text-decoration: none;
+    color: black;
+}
+.card p{
+    text-align: left;
+    padding: 30px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00A5EC;
+}
+.card hr{
+    border:1px solid #f0efef;
+}
+.todo1{
+    display: flex;
+    margin: 20px;
+    font-size: 18px;
+}
+.todo1 label{
+    color: #C2C2C2;
+    text-decoration: line-through;
+}
+.todo1 input{
+    width: 40px;
+    height: 20px;
+    margin-right: 10px;
+}
+.todo2{
+    display: flex;
+    margin: 20px;
+    font-size: 18px;
+}
+.todo2 input{
+    width: 40px;
+    height: 20px;
+    margin-right: 10px;
+}
+.overlay{
+    position: absolute;
+    z-index: 211;
+    top: 0px;
+    background-color: rgba(19, 19, 19, 0.514);
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.model{
+    width: 500px;
+    height: 250px;
+    background-color: #FFFFFF;
+    margin-top: 16%;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+}
+.heading{
+    font-size: 22px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #424242;
+    font-weight: bold;
+}
+.cross{
+    color: #858585;
+    text-decoration: none;
+}
+.model-body{
+    margin: 20px;
+}
+.model-body input{
+    width: 96%;
+    background-color: #F7F7F7;
+    padding: 10px;
+    border: none;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    color: #858585 ;
+}
+.addTask{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+.addTask button{
+    background-color: #00A5EC;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 28px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.addTask button p{
+    padding-left: 20px;
+    font-size: 20px;
+}
+.task-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.addBtnView{
+    display: flex;
+    justify-content: center;
+    font-size:22px;
+    color: #424242;
+    margin-top: 20px;
+}
+.addBtnView span a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #424242;
+    margin: 0px 100px;
+}
+.backIcon{
+    font-size: 18px;
+    background-color: #424242;
+    color: #FFFFFF;
+    margin-right: 20px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.taskCard
+{
+    width: 500px;
+    height: 338px;
+    margin: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #EDEDED;
+    box-shadow: 0px 0px 20px #67676729;
+}
+.taskCard p{
+    text-align: center;
+    padding: 30px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00A5EC;
+}
+.taskCard hr{
+    border:1px solid #f0efef;
+}
+.card:hover{
+    box-shadow: 0px 0px 20px #67676729;
+}
+
+@media (max-width:600px) {
+    .taskName{
+        display: none;
+    }
+    .addBtn{
+        justify-content: center;
+        margin-right:0px ;
+    }
+    .model{
+        margin: 0px 5%;
+        margin-top: 70%;
+    }
+    .addBtnView span a{
+        margin: 0px 50px;
+    }
+}
